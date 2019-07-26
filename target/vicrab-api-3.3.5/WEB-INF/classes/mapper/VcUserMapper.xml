@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.brook.mapper.VcUserMapper" >
+  <resultMap id="BaseResultMap" type="com.brook.bean.VcUser" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_key" property="userKey" jdbcType="VARCHAR" />
+    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
+    <result column="user_pwd" property="userPwd" jdbcType="VARCHAR" />
+    <result column="user_header" property="userHeader" jdbcType="VARCHAR" />
+    <result column="user_realname" property="userRealname" jdbcType="VARCHAR" />
+    <result column="user_gender" property="userGender" jdbcType="INTEGER" />
+    <result column="user_status" property="userStatus" jdbcType="VARCHAR" />
+    <result column="register_time" property="registerTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+
+  </resultMap>
+  <insert id="addUser" parameterType="com.brook.bean.VcUser" useGeneratedKeys="true" keyProperty="id" >
+    insert into vc_user
+      (user_key, user_email, user_pwd,
+      user_header, user_realname, user_gender,
+      user_status, register_time)
+    values
+      (#{userKey}, #{userEmail}, #{userPwd},
+      #{userHeader}, #{userRealname}, #{userGender},
+      #{userStatus},now())
+    ON DUPLICATE KEY UPDATE update_time = now(), user_realname = values (user_realname), user_status = values (user_status), user_pwd = values (user_pwd)
+  </insert>
+
+  <update id="updateUserBase" parameterType="com.brook.bean.VcUser">
+    update vc_user
+    set user_realname = #{userRealname},
+    user_gender = #{userGender}
+    where user_key = #{userKey}
+  </update>
+
+  <select id="getUserByUserEmail" resultMap="BaseResultMap">
+    select id, user_key, user_email, user_pwd, user_header, user_realname, user_gender,user_status,
+    register_time, update_time
+    from vc_user
+    where user_email = #{userEmail}
+  </select>
+
+
+  <select id="getUser" resultMap="BaseResultMap">
+    select id, user_key, user_email, user_pwd, user_header, user_realname, user_gender,user_status,
+    register_time, update_time
+    from vc_user
+    where user_key = #{userKey}
+  </select>
+
+  <select id="getUserListByUserKeys" resultMap="BaseResultMap">
+    select id, user_key, user_email, user_pwd, user_header, user_realname, user_gender,user_status,
+    register_time, update_time
+    from vc_user
+    where user_key in
+    <foreach collection="userKeys" item="userKey" open="(" close=")" separator=",">
+      #{userKey}
+    </foreach>
+  </select>
+
+  <update id="setUserByUserEmail">
+    update vc_user
+    set user_pwd = #{userPwd},
+    user_realname=#{userRealname}
+    where user_email = #{userEmail}
+  </update>
+
+
+  <update id="updateUserPassword">
+    update vc_user
+    set user_pwd = #{userPwd}
+    where user_key = #{userKey}
+  </update>
+
+  <update id="updateUserEmail">
+    update vc_user
+    set user_email = #{userEmail}
+    where user_key = #{userKey}
+  </update>
+
+  <update id="updateUserStatus">
+     update vc_user
+    set user_status = #{userStatus}
+    where user_key = #{userKey}
+  </update>
+
+
+</mapper>

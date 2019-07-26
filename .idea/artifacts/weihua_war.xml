@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="weihua:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>weihua</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="brook-api-3.3.5.war">
+      <element id="artifact" artifact-name="weihua:war exploded" />
+    </root>
+  </artifact>
+</component>

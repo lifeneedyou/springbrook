@@ -1,0 +1,84 @@
+server:
+  servlet:
+    context-path: /
+  port: 4008
+
+spring:
+  profiles:
+    active: dev
+    include:
+    - dev
+    - test
+    - prod
+    - travis
+  jackson:
+    date-format: com.brook.utils.RFC3339DateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+#    default-property-inclusion: non_absent
+  transaction:
+    default-timeout: Pt5m
+    rollback-on-commit-failure: true
+  datasource:
+    druid:
+      stat-view-servlet:
+        url-pattern: /druid/*
+        login-username: johnson
+        login-password: qwertyuiop[]
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+  mail:
+    host: smtp.qiye.aliyun.com
+    username: feedback@vicrab.com
+    password: Vicrab2019123
+    default-encoding: UTF-8
+    properties:
+      mail:
+        debug: false
+        smtp:
+          auth: true
+          port: 465
+          ssl:
+            enable: true
+            socketFactory: sf
+          starttls:
+            enable: true
+            required: true
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.brook.bean
+
+logging:
+  # only effective if logback.xml not exists
+  file: target/logs/vicrab/brook-api.log
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    root: WARN
+    org.springframework: WARN
+    org.springframework.core: WARN
+    org.springframework.test: WARN
+    org.springframework.test.context: WARN
+    org.springframework.test.context.junit4: WARN
+    org.springframework.boot: WARN
+    org.springframework.boot.test: WARN
+    org.springframework.boot.test.context: WARN
+    org.apache.tomcat: INFO
+    org.apache.catalina: INFO
+    org.eclipse.jetty: INFO
+    org.apache.ibatis: WARN
+    springfox: WARN
+    org.apache.http: WARN
