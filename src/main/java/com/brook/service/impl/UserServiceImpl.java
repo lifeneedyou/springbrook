@@ -2,6 +2,7 @@
 
 import com.brook.mapper.VcUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.brook.bean.OperateResult;
@@ -12,6 +13,7 @@ import com.brook.service.UserService;
 
 
 @Service
+@Component
 public class UserServiceImpl implements UserService{
 
 

@@ -3,8 +3,7 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package com.brook.api;
-
+package com.brook.controller;
 import io.swagger.annotations.*;
 
 import org.springframework.http.HttpStatus;
