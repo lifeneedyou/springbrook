@@ -1,4 +1,4 @@
-package com.brook.api.bean;
+package com.brook.bean;
 
 public class Zhuanye {
     private Integer id;

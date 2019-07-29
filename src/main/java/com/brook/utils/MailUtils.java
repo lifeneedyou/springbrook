@@ -1,10 +1,10 @@
 package com.brook.utils;
 
 
+import com.brook.config.KeyConfig;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.brook.config.KeyConfig;
 
 public class MailUtils {
 

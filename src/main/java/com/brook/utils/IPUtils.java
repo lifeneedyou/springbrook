@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 
 /**
  * @Author: xuequan

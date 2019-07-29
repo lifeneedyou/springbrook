@@ -1,6 +1,6 @@
-package com.brook.api.mapper;
+package com.brook.mapper;
 
-import com.brook.api.bean.Zhuanye;
+import com.brook.bean.Zhuanye;
 import java.util.List;
 
 public interface ZhuanyeMapper {
