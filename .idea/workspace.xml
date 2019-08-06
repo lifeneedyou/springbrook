@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50fdb8a3-7315-492e-99b5-fbe36867b7e3" name="Default Changelist" comment="ccc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/aop/VicrabAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/bean/HeaderInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/config/EnvConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/AbstractMongoDBRoutingMongoTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/DynamicMongoDBAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/DynamicMongoDBControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/DynamicMongoDBEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/MongoDBTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/MongoDBTemplateRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/datasource/MongodbTemplateContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/exception/PermissionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/mongo/LogSystemOperateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/mongo/dao/LogSystemOperateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/mongo/dao/impl/LogSystemOperateDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/permission/PermissionInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/permission/WebAppConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/FileUploadUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/RequestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/ToolUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/api/bean/Zhuanye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/bean/Zhuanye.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/api/mapper/ZhuanyeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/mapper/ZhuanyeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/config/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/utils/EntityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/EntityUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/utils/GitHubTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/GitHubTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/utils/IPUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/IPUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brook/utils/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brook/utils/MailUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ZhuanyeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ZhuanyeMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="50fdb8a3-7315-492e-99b5-fbe36867b7e3" name="Default Changelist" comment="ccc" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brook/datasource/MongoDBTemplateRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="330">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -284,43 +254,6 @@
               <item name="brookboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brook" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brookboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brookboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brook" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brookboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brookboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brook" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brookboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brookboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brook" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brookboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brookboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,12 +358,12 @@
       <workItem from="1564281816880" duration="40000" />
       <workItem from="1564325542850" duration="7000" />
       <workItem from="1564365646537" duration="67000" />
-      <workItem from="1564383270398" duration="2120000" />
+      <workItem from="1564383270398" duration="2290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13526000" />
+    <option name="totallyTimeSpent" value="13696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="93" y="23" width="1450" height="885" extended-state="0" />
@@ -833,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brook/datasource/MongoDBTemplateRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        <state relative-caret-position="330">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
         </state>
       </provider>
     </entry>
