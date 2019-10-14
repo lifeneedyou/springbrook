@@ -16,7 +16,16 @@ spring:
     test-on-return: false
     pool-prepared-statements: false
     max-pool-prepared-statement-per-connection-size: -1
-  
+  ## 测试环境
+  mongodb:
+    vicrab_operate_log:
+      uri: mongodb://vicrab_operate_log:Vicrab_2019@193.112.190.63:27017/vicrab_operate_log
+    vicrab_java:
+      uri: mongodb://vicrab_log_java:Vicrab_Developer_2019@193.112.190.63:27017/vicrab_log_java
+    vicrab_android:
+      uri: mongodb://vicrab_log_android:Vicrab_Developer_2019@193.112.190.63:27017/vicrab_log_android
+    vicrab_php:
+      uri: mongodb://vicrab_log_php:Vicrab_Developer_2019@193.112.190.63:27017/vicrab_log_php
 vicrab:
   env: test
 
