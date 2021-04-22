@@ -37,7 +37,7 @@
         <version.jedis>2.9.0</version.jedis>
         <version.oss>2.8.1</version.oss>
         <version.jwt>3.8.0</version.jwt>
-        <version.shiro-spring>1.4.0</version.shiro-spring>
+        <version.shiro-spring>1.7.0</version.shiro-spring>
     </properties>
 
     <!--
