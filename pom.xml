@@ -32,7 +32,7 @@
         <version.springfox>2.9.2</version.springfox>
         <version.swagger>1.5.21</version.swagger>
         <version.swagger-bootstrap-ui>1.9.1</version.swagger-bootstrap-ui>
-        <version.fastjson>1.2.34</version.fastjson>
+        <version.fastjson>1.2.83</version.fastjson>
         <version.jgit>5.2.1.201812262042-r</version.jgit>
         <version.jedis>2.9.0</version.jedis>
         <version.oss>2.8.1</version.oss>
